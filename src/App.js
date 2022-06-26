@@ -7,8 +7,22 @@ class App extends Component {
   constructor() {
     super();
 
+    this.updateName = this.updateName.bind(this)
+
     this.state = {
       name: 'Stefan',
+    }
+  }
+
+  updateName = (newName) => {
+    if (this.state.name == 'Stefan') {
+        this.setState({
+          name: newName
+        })
+    } else {
+      this.setState({
+        name: 'Stefan'
+      })
     }
   }
 
@@ -18,7 +32,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>Hi {this.state.name}</p>
-          <PrimaryButton />
+          <PrimaryButton newName={this.updateName} />
         </header>
       </div>
     );
