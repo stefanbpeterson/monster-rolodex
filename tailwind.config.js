@@ -4,7 +4,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: theme => ({
+        'sonic-background': "url('./assets/images/sonic-background.png')"
+      })
+    },
   },
   plugins: [],
 }
