@@ -40,13 +40,13 @@ class App extends Component {
               <div className="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
                 <h2 className="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">Sonic Friends</h2>
                 <p className="text-xl text-gray-300">
-                  Find your favorite Sonic characters! 
+                  Find your favorite Sonic characters!
                 </p>
               </div>
             </div>
           </div>
         <SearchBox onSearchChange={this.onSearchChange} characters={filteredCharacters} placeholder='Search for Sonic characters' />
-        <CardList onSearchChange={this.onSearchChange} className='card-list' characters={filteredCharacters} maxHeight='max-h-60' />
+        <CardList className='card-list' characters={filteredCharacters} maxHeight='max-h-60' />
       </div>
     );
   }

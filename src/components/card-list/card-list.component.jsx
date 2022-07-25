@@ -5,7 +5,7 @@ import Card from '../card/card.component'
 class CardList extends Component {
     render() {
         return (
-          <Card onSearchChange={this.props.onSearchChange} className='card-list' characters={this.props.characters} maxHeight='max-h-60' />
+          <Card className='card-list' characters={this.props.characters} maxHeight='max-h-60' />
         );
     }
 }
