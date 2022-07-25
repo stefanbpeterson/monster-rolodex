@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import InfoModal from '../info-modal/info-modal.component'
 
 export class Card extends Component {
   render() {
@@ -19,7 +20,6 @@ export class Card extends Component {
                         <h3 className="text-white">{character.name}</h3>
                         <p className="text-indigo-400">{character.role}</p>
                       </div>
-  
                       <ul className="flex justify-center space-x-5">
                         <li>
                           <a href={character.twitterUrl} className="text-gray-400 hover:text-gray-300">
