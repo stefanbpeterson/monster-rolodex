@@ -29,16 +29,16 @@ const InfoModal = (props) => {
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              <Dialog.Panel className="relative bg-white rounded-md px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:max-w-lg sm:w-full sm:p-6">
-                <div className="mx-auto flex items-center justify-center h-40 w-40 rounded-full bg-green-100">
+              <Dialog.Panel className="relative bg-gray-800 rounded-md px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:max-w-lg sm:w-full sm:p-6">
+                <div className="mx-auto flex items-center justify-center h-40 w-40 rounded-full bg-blue-300">
                   <img className="mx-auto h-40 w-40 xl:w-40 xl:h-40" src={props.selectedCharacter.img} alt="" />
                 </div>
                 <div className="mt-3 text-center sm:mt-5">
-                  <Dialog.Title as="h3" className="text-lg leading-6 font-medium text-gray-900">
+                  <Dialog.Title as="h3" className="text-lg leading-6 font-medium text-white">
                     {props.selectedCharacter.name}
                   </Dialog.Title>
                   <div className="mt-2">
-                    <p className="text-sm text-gray-500">
+                    <p className="text-sm text-gray-200">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur amet labore.
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur amet labore.
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur amet labore.
@@ -52,7 +52,7 @@ const InfoModal = (props) => {
                 <div className="mt-5 sm:mt-6">
                   <button
                     type="button"
-                    className="inline-flex justify-center w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:text-sm"
+                    className="inline-flex justify-center w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-600 text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:text-sm"
                     onClick={() => props.setOpen(false)}
                   >
                     {`< BACK`}
