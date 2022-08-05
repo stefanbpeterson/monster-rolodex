@@ -5,10 +5,6 @@ const Card = (props) => {
   const [open, setOpen] = useState(false)
   const [selectedCharacter, setSelectedCharacter] = useState({})
 
-  let audio = new Audio(props.characters.map((character) => {
-      return character.sound
-    }))
-
   return (
     <div className="bg-gray-900">
       <InfoModal open={open} setOpen={setOpen} characters={props.characters} selectedCharacter={selectedCharacter} />
